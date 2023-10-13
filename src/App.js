@@ -1,8 +1,15 @@
+import "./styles/css/common/Container.css";
+import "./styles/css/common/Reset.css";
+import "./assets/font/Font.css";
+import Header from "./components/Header";
+
 function App() {
   return (
-    <>
-      <h1>hello</h1>
-    </>
+    <div className="container">
+      <div className="container__header">
+        <Header />
+      </div>
+    </div>
   );
 }
 

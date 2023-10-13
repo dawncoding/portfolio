@@ -1,0 +1,55 @@
+@use "../helper/" as *;
+
+.header {
+  width: 86.36vw;
+  height: 12.73vw;
+  border-radius: 20px;
+  background-color: white;
+
+  display: flex;
+  margin-top: 23px;
+  padding: 4px 16px;
+  justify-content: space-between;
+  align-items: center;
+  // gap: 132px;
+
+  &__home {
+    @include mixin-header;
+    background-color: white;
+    border: none;
+  }
+
+  &__nav {
+    button {
+      @include mixin-nav;
+      background-color: white;
+      border: none;
+    }
+  }
+
+  @include mixin-res--mobile {
+    max-width: 700px;
+    max-height: 50px;
+    &__nav {
+      display: none;
+    }
+  }
+  @include mixin-res--web {
+    width: 91.15vw;
+    max-width: 1200px;
+    max-height: 50px;
+    &__icon {
+      display: none;
+    }
+    &__nav {
+      ul {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+      }
+      li {
+        padding: 8px 12px;
+      }
+    }
+  }
+}

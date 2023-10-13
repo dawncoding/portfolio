@@ -1,0 +1,53 @@
+@use "variables" as v;
+$mobilePlus: v.$mobile + 1;
+$tabletPlus: v.$tablet + 1;
+
+//////////////////////////////////// 반응형
+// Mobile
+@mixin res--mobile {
+  @media (width <= #{v.$mobile}px) {
+    @content;
+  }
+}
+
+// Web
+@mixin res--web {
+  @media (#{$mobilePlus}px <= width) {
+    @content;
+  }
+}
+
+//////////////////////////////////// 폰트
+@mixin eng-font($color, $size, $weight: 400, $lineHeight: normal) {
+  color: $color;
+  font-family: DM Serif Display;
+  font-size: $size;
+  font-style: normal;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+
+@mixin kor-font($color, $size, $weight: 400, $lineHeight: normal) {
+  color: $color;
+  font-family: Gowun Batang;
+  font-size: $size;
+  font-style: normal;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+
+@mixin header {
+  @include eng-font(black, 24px, 400, normal);
+}
+
+@mixin nav {
+  @include eng-font(black, 20px, 400, normal);
+}
+
+@mixin title {
+  @include eng-font(white, 24px, 400, normal);
+}
+
+@mixin content {
+  @include kor-font(white, 20px, 400, normal);
+}
