@@ -6,6 +6,7 @@ import ParabolaBackground from "./components/ParabolaBackground";
 import FrontendDeveloperText from "./components/FrontendDeveloperText";
 import SunjinPortfolioText from "./components/SunjinPortfolioText";
 import Circle from "./components/Circle";
+import InfoButton from "./components/InfoButton";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <FrontendDeveloperText />
           <SunjinPortfolioText />
           <Circle circleNumber="first" />
-          <Circle circleNumber="second" />
+          <InfoButton />
         </div>
       </div>
     </div>
