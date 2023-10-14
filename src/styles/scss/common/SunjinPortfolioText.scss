@@ -1,0 +1,17 @@
+@use "../helper/" as *;
+
+.info__second {
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+  position: absolute;
+  top: 164px;
+  right: 30px;
+  span {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    color: white;
+    @include mixin-title;
+  }
+}

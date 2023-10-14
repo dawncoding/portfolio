@@ -1,11 +1,8 @@
 .parabola {
   display: flex;
-  overflow: hidden;
 }
 
 img {
-  margin-top: 35px;
-  overflow: hidden;
-  width: 106.06vw;
+  width: 100vw;
   height: 40.9vw;
 }

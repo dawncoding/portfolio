@@ -1,0 +1,17 @@
+.circle {
+  width: 54px;
+  height: 54px;
+  background-color: #72b3ff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.first {
+  top: 150px;
+  right: 10px;
+}
+
+.second {
+  top: 150px;
+  left: 10px;
+}

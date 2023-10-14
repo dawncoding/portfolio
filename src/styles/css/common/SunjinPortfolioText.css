@@ -1,0 +1,20 @@
+.info__second {
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+  position: absolute;
+  top: 164px;
+  right: 30px;
+}
+.info__second span {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+  color: white;
+  color: white;
+  font-family: DM Serif Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

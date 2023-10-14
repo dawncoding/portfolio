@@ -1,0 +1,14 @@
+@use "../helper/" as *;
+
+.info__first {
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+  position: absolute;
+  top: 88px;
+  left: 30px;
+  span {
+    color: white;
+    @include mixin-title;
+  }
+}
