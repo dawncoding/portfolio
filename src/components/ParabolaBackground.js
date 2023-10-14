@@ -1,10 +1,10 @@
 import "../styles/css/common/ParabolaBackground.css";
-import vector from "../assets/image/vector.png";
+import parabola from "../assets/image/parabola.png";
 
 export default function ParabolaBackground() {
   return (
     <div className="parabola">
-      <img src={vector}></img>
+      <img src={parabola} alt="parabola"></img>
     </div>
   );
 }
