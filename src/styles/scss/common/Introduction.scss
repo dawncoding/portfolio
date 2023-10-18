@@ -1,0 +1,16 @@
+@use "../helper/" as *;
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+
+  &__title {
+    @include mixin-title;
+    z-index: 10;
+  }
+  &__content {
+    @include mixin-content;
+    height: 200px;
+  }
+}

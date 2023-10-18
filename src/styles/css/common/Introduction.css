@@ -1,0 +1,23 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+.intro__title {
+  color: white;
+  font-family: DM Serif Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 10;
+}
+.intro__content {
+  color: white;
+  font-family: Gowun Batang;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 200px;
+}
