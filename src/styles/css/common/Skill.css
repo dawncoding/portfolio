@@ -1,0 +1,35 @@
+.skill {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+.skill__title {
+  color: white;
+  font-family: DM Serif Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+}
+.skill__filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill__filter--box {
+  display: flex;
+  padding: 6px 8px;
+  margin: 5px;
+  text-align: center;
+  color: white;
+  font-family: DM Serif Display;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: black;
+}

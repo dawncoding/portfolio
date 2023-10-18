@@ -7,6 +7,8 @@ import FrontendDeveloperText from "./components/FrontendDeveloperText";
 import SunjinPortfolioText from "./components/SunjinPortfolioText";
 import Circle from "./components/Circle";
 import InfoButton from "./components/InfoButton";
+import Introduction from "./components/Introduction";
+import Skill from "./components/Skill";
 
 function App() {
   return (
@@ -21,6 +23,14 @@ function App() {
           <SunjinPortfolioText />
           <Circle circleNumber="first" />
           <InfoButton />
+        </div>
+        <div className="container__body--intro">
+          <Introduction />
+          <Circle circleNumber="second" />
+        </div>
+        <div className="container__body--skill">
+          <Skill />
+          <Circle circleNumber="third" />
         </div>
       </div>
     </div>

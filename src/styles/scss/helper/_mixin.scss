@@ -52,6 +52,10 @@ $tabletPlus: v.$tablet + 1;
   @include kor--font(white, 20px, 400, normal);
 }
 
+@mixin skill--filter {
+  @include eng--font(white, 15px, 400, normal);
+}
+
 @mixin info--button {
   @include eng--font(black, 13px, 400, normal);
 }

@@ -1,0 +1,30 @@
+@use "../helper/" as *;
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  &__title {
+    @include mixin-title;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+  }
+  &__filter {
+    display: flex;
+    flex-wrap: wrap;
+    &--box {
+      // Layout
+      display: flex;
+      padding: 6px 8px;
+      margin: 5px;
+      text-align: center;
+
+      // Style
+      @include mixin-skill--filter;
+      border-radius: 20px;
+      border: 1px solid #fff;
+      background: black;
+    }
+  }
+}
