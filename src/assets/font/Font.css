@@ -4,3 +4,10 @@
   font-weight: normal;
   src: url("./DMSerifDisplay-Regular.ttf") format("woff");
 }
+
+@font-face {
+  font-family: "Gowun Batang";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./GowunBatang-Regular.ttf") format("woff");
+}
