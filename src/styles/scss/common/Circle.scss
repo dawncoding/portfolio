@@ -1,12 +1,14 @@
 @use "../helper/" as *;
 
 .circle {
+  // Layout
   width: 54px;
   height: 54px;
+  position: absolute;
+
+  // Style
   background-color: $var-lightBlue;
   border-radius: 50%;
-
-  position: absolute;
 }
 
 .first {

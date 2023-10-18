@@ -9,6 +9,7 @@ import Circle from "./components/Circle";
 import InfoButton from "./components/InfoButton";
 import Introduction from "./components/Introduction";
 import Skill from "./components/Skill";
+import SkillInfo from "./components/SkillInfo";
 
 function App() {
   return (
@@ -31,6 +32,11 @@ function App() {
         <div className="container__body--skill">
           <Skill />
           <Circle circleNumber="third" />
+          <SkillInfo title="HTML/CSS" />
+          <SkillInfo title="Javascript" titlePosition="right" />
+          <SkillInfo title="React" />
+          <SkillInfo title="Node.js" titlePosition="right" />
+          <SkillInfo title="AWS" />
         </div>
       </div>
     </div>

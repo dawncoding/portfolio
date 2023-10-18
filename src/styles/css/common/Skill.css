@@ -17,12 +17,14 @@
 .skill__filter {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 5px;
 }
 .skill__filter--box {
-  display: flex;
+  display: inline-block;
   padding: 6px 8px;
   margin: 5px;
   text-align: center;
+  z-index: 10;
   color: white;
   font-family: DM Serif Display;
   font-size: 15px;
@@ -32,4 +34,34 @@
   border-radius: 20px;
   border: 1px solid #fff;
   background: black;
+}
+.skill__info {
+  width: 290px;
+  height: 100px;
+  margin: 30px 20px;
+  position: relative;
+  border: 1px solid white;
+  background: black;
+}
+.skill__info--title {
+  display: inline-block;
+  padding: 6px 8px;
+  margin: 5px;
+  text-align: center;
+  z-index: 10;
+  position: absolute;
+  top: -20px;
+  color: white;
+  font-family: DM Serif Display;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: black;
+}
+
+.right {
+  right: 0px;
 }

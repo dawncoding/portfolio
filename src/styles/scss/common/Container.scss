@@ -1,6 +1,5 @@
 .container {
   width: 100vw;
-  height: 100vh;
   background-color: black;
 
   &__header {
@@ -11,6 +10,7 @@
   &__body {
     display: flex;
     width: 100vw;
+
     flex-direction: column;
   }
 }

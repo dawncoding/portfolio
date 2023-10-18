@@ -1,9 +1,9 @@
 .circle {
   width: 54px;
   height: 54px;
+  position: absolute;
   background-color: #72b3ff;
   border-radius: 50%;
-  position: absolute;
 }
 
 .first {

@@ -13,12 +13,14 @@
   &__filter {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 5px;
     &--box {
       // Layout
-      display: flex;
+      display: inline-block;
       padding: 6px 8px;
       margin: 5px;
       text-align: center;
+      z-index: 10;
 
       // Style
       @include mixin-skill--filter;
@@ -27,4 +29,35 @@
       background: black;
     }
   }
+  &__info {
+    // Layout
+    width: 290px;
+    height: 100px;
+    margin: 30px 20px;
+    position: relative;
+
+    // Style
+    border: 1px solid white;
+    background: black;
+    &--title {
+      // Layout
+      display: inline-block;
+      padding: 6px 8px;
+      margin: 5px;
+      text-align: center;
+      z-index: 10;
+      position: absolute;
+      top: -20px;
+
+      // Style
+      @include mixin-skill--filter;
+      border-radius: 20px;
+      border: 1px solid #fff;
+      background: black;
+    }
+  }
+}
+
+.right {
+  right: 0px;
 }
