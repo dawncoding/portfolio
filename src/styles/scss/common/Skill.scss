@@ -31,8 +31,9 @@
   }
   &__info {
     // Layout
-    width: 290px;
-    height: 100px;
+    // width: 290px;
+    display: flex;
+    height: 300px;
     margin: 30px 20px;
     position: relative;
 
@@ -57,6 +58,7 @@
     }
     &--content {
       // Layout
+      display: flex;
       margin: 25px;
 
       // Style

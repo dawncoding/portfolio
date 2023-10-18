@@ -25,5 +25,9 @@
       // background-position: contain;
       background-attachment: scroll;
     }
+    &--skill {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

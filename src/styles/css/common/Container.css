@@ -21,3 +21,7 @@
   background-size: contain;
   background-attachment: scroll;
 }
+.container__body--skill {
+  display: flex;
+  flex-direction: column;
+}

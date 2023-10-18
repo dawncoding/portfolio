@@ -27,7 +27,7 @@
   z-index: 10;
   color: white;
   font-family: DM Serif Display;
-  font-size: 15px;
+  font-size: 4.55vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -36,8 +36,8 @@
   background: black;
 }
 .skill__info {
-  width: 290px;
-  height: 100px;
+  display: flex;
+  height: 300px;
   margin: 30px 20px;
   position: relative;
   border: 1px solid white;
@@ -53,7 +53,7 @@
   top: -20px;
   color: white;
   font-family: DM Serif Display;
-  font-size: 15px;
+  font-size: 4.55vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -62,10 +62,11 @@
   background: black;
 }
 .skill__info--content {
+  display: flex;
   margin: 25px;
   color: white;
   font-family: Gowun Batang;
-  font-size: 13px;
+  font-size: 3.94vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

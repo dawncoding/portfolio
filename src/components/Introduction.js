@@ -1,8 +1,14 @@
 import "../styles/css/common/Introduction.css";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Introduction() {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
   return (
-    <div className="intro">
+    <div className="intro" data-aos="zoom-in">
       <div className="intro__title">Intro</div>
       <div className="intro__content">
         자기소개 내용 Lorem Ipsum is simply dummy text of the printing and
