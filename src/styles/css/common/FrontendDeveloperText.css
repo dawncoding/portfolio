@@ -1,16 +1,13 @@
 .info__first {
   display: flex;
   flex-direction: column;
-  width: 110px;
-  position: absolute;
-  top: 88px;
-  left: 30px;
+  margin-left: 30px;
 }
 .info__first span {
   color: white;
   color: white;
   font-family: DM Serif Display;
-  font-size: 24px;
+  font-size: 7.2727vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

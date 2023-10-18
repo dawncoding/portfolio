@@ -45,7 +45,7 @@ $tabletPlus: v.$tablet + 1;
 }
 
 @mixin title {
-  @include eng--font(white, 24px, 400, normal);
+  @include eng--font(white, 7.2727vw, 400, normal);
 }
 
 @mixin content {
@@ -53,7 +53,8 @@ $tabletPlus: v.$tablet + 1;
 }
 
 @mixin info--button {
-  @include eng--font(black, 13px, 400, normal);
+  @include eng--font(black, 3.94vw, 400, normal);
+  max-size: 100px;
 }
 
 @mixin skill--filter {

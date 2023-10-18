@@ -6,12 +6,15 @@
 .info__button button {
   color: black;
   font-family: DM Serif Display;
-  font-size: 13px;
+  font-size: 3.94vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 200px;
-  height: 20px;
+  max-size: 100px;
+  width: 66.67vw;
+  height: 6.06vw;
+  max-width: 800px;
+  max-height: 80px;
   border-color: transparent;
   border-radius: 20px;
   background-color: white;

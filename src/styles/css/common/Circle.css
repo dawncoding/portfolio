@@ -1,14 +1,14 @@
 .circle {
-  width: 54px;
-  height: 54px;
+  width: 16.67vw;
+  height: 16.67vw;
   position: absolute;
   background-color: #72b3ff;
   border-radius: 50%;
 }
 
 .first {
-  top: 150px;
-  right: 10px;
+  top: 47.94vw;
+  right: 4.55vw;
 }
 
 .second {

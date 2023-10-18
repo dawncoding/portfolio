@@ -1,9 +1,15 @@
 import { ReactComponent as Nav } from "../assets/image/menu.svg";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../styles/css/common/Header.css";
 
 export default function Header() {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
   return (
-    <header className="header">
+    <header className="header" data-aos="fade-up">
       <button className="header__home">Portfolio</button>
 
       <Nav className="header__icon" />

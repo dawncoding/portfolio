@@ -6,8 +6,10 @@
   align-items: flex-end;
   button {
     @include mixin-info--button;
-    width: 200px;
-    height: 20px;
+    width: 66.67vw;
+    height: 6.06vw;
+    max-width: 800px;
+    max-height: 80px;
     border-color: transparent;
     border-radius: 20px;
     background-color: white;

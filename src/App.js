@@ -19,19 +19,18 @@ function App() {
       </div>
       <div className="container__body">
         <div className="container__body--info">
-          <ParabolaBackground />
+          {/* <ParabolaBackground /> */}
           <FrontendDeveloperText />
           <SunjinPortfolioText />
-          <Circle circleNumber="first" />
           <InfoButton />
         </div>
         <div className="container__body--intro">
           <Introduction />
-          <Circle circleNumber="second" />
+          {/* <Circle circleNumber="second" /> */}
         </div>
         <div className="container__body--skill">
           <Skill />
-          <Circle circleNumber="third" />
+          {/* <Circle circleNumber="third" /> */}
           <SkillInfo title="HTML/CSS" />
           <SkillInfo title="Javascript" titlePosition="right" />
           <SkillInfo title="React" />
