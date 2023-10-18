@@ -61,6 +61,15 @@
   border: 1px solid #fff;
   background: black;
 }
+.skill__info--content {
+  margin: 25px;
+  color: white;
+  font-family: Gowun Batang;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
 .right {
   right: 0px;

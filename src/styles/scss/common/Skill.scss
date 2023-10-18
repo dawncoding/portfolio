@@ -55,6 +55,13 @@
       border: 1px solid #fff;
       background: black;
     }
+    &--content {
+      // Layout
+      margin: 25px;
+
+      // Style
+      @include mixin-skill--content;
+    }
   }
 }
 
