@@ -2,7 +2,6 @@ import "./styles/css/common/Container.css";
 import "./styles/css/common/Reset.css";
 import "./assets/font/Font.css";
 import Header from "./components/Header";
-import ParabolaBackground from "./components/ParabolaBackground";
 import FrontendDeveloperText from "./components/FrontendDeveloperText";
 import SunjinPortfolioText from "./components/SunjinPortfolioText";
 import Circle from "./components/Circle";
@@ -10,6 +9,7 @@ import InfoButton from "./components/InfoButton";
 import Introduction from "./components/Introduction";
 import Skill from "./components/Skill";
 import SkillInfo from "./components/SkillInfo";
+import Activity from "./components/Activity";
 
 function App() {
   return (
@@ -19,7 +19,6 @@ function App() {
       </div>
       <div className="container__body">
         <div className="container__body--info">
-          {/* <ParabolaBackground /> */}
           <FrontendDeveloperText />
           <SunjinPortfolioText />
           <InfoButton />
@@ -36,6 +35,9 @@ function App() {
           <SkillInfo title="React" />
           <SkillInfo title="Node.js" titlePosition="right" />
           <SkillInfo title="AWS" />
+        </div>
+        <div className="container__body--activity">
+          <Activity />
         </div>
       </div>
     </div>
