@@ -1,0 +1,56 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+.project__title {
+  color: white;
+  font-family: DM Serif Display;
+  font-size: 7.2727vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+}
+.project__info {
+  display: flex;
+  height: 300px;
+  margin: 30px 20px;
+  position: relative;
+  border: 1px solid white;
+  background: black;
+}
+.project__info--title {
+  display: inline-block;
+  padding: 6px 8px;
+  margin: 5px;
+  text-align: center;
+  z-index: 10;
+  position: absolute;
+  top: -20px;
+  color: white;
+  font-family: DM Serif Display;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: black;
+}
+.project__info--content {
+  display: flex;
+  margin: 25px;
+  color: white;
+  font-family: Gowun Batang;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.right {
+  right: 0px;
+}

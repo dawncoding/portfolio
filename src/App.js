@@ -10,6 +10,7 @@ import Introduction from "./components/Introduction";
 import Skill from "./components/Skill";
 import SkillInfo from "./components/SkillInfo";
 import Activity from "./components/Activity";
+import Project from "./components/Project";
 
 function App() {
   return (
@@ -38,6 +39,9 @@ function App() {
         </div>
         <div className="container__body--activity">
           <Activity />
+        </div>
+        <div className="container__body--project">
+          <Project />
         </div>
       </div>
     </div>
