@@ -57,9 +57,9 @@ $tabletPlus: v.$tablet + 1;
 }
 
 @mixin skill--filter {
-  @include eng--font(white, 4.55vw, 400, normal);
+  @include eng--font(white, 15px, 400, normal);
 }
 
 @mixin skill--content {
-  @include kor--font(white, 3.94vw, 400, normal);
+  @include kor--font(white, 13px, 400, normal);
 }
