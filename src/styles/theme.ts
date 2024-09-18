@@ -42,6 +42,9 @@ theme = createTheme(theme, {
       'Arial',
       'sans-serif',
     ].join(','),
+    h1: {
+      fontSize: 40,
+    },
   },
 });
 
