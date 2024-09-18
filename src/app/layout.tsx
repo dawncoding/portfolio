@@ -1,8 +1,7 @@
-"use client";
+'use client';
 
-import theme from "@/styles/theme.ts";
-import { CssBaseline, ThemeProvider } from "@mui/material";
-// import localFont from "next/font/local";
+import theme from '@/styles/theme.ts';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 
 export default function RootLayout({
   children,
