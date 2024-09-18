@@ -44,7 +44,7 @@ const BusinessCard: React.FC = () => {
         >
           <Avatar
             alt="profile"
-            src="public/images/profile.png"
+            src="/images/profile.png"
             sx={{
               backgroundColor: theme.palette.blue.light,
               width: '8rem',
