@@ -4,9 +4,11 @@ import { createTheme, PaletteColor } from '@mui/material';
 declare module '@mui/material/styles' {
   interface Palette {
     gray: PaletteColor; // Palette에 gray 추가
+    blue: PaletteColor;
   }
   interface PaletteOptions {
     gray?: PaletteColor; // PaletteOptions에 gray 추가
+    blue?: PaletteColor;
   }
 }
 
@@ -23,6 +25,14 @@ theme = createTheme(theme, {
         light: '#D9D9D9',
       },
       name: 'gray',
+    }),
+    blue: theme.palette.augmentColor({
+      color: {
+        main: '#72B3FF',
+        light: '#ADD3FF',
+        dark: '#377BCB',
+      },
+      name: 'blue',
     }),
   },
   typography: {
