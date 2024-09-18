@@ -21,13 +21,18 @@ const Header: React.FC = () => {
     <BoxShadowContainer borderRadius="2.5rem" padding="1.5rem" margin="1rem">
       <Stack direction="row" justifyContent="space-between">
         <Box display="flex" alignItems="center">
-          <Text language="en" variant="h5">
+          <Text language="en" variant="h1">
             Portfolio
           </Text>
         </Box>
         {isMediumSmaller ? (
-          <IconButton sx={{ color: theme.palette.common.black, padding: 0 }}>
-            <MenuIcon />
+          <IconButton
+            sx={{
+              color: theme.palette.common.black,
+              padding: 0,
+            }}
+          >
+            <MenuIcon sx={{ width: '2rem', height: '2rem' }} />
           </IconButton>
         ) : (
           <Stack direction="row" gap="1rem">
@@ -36,7 +41,6 @@ const Header: React.FC = () => {
               className={dmSerifDisplay.className}
               sx={{
                 color: theme.palette.common.black,
-
                 textTransform: 'none',
               }}
             >
@@ -47,7 +51,6 @@ const Header: React.FC = () => {
               className={dmSerifDisplay.className}
               sx={{
                 color: theme.palette.common.black,
-
                 textTransform: 'none',
               }}
             >
@@ -58,7 +61,6 @@ const Header: React.FC = () => {
               className={dmSerifDisplay.className}
               sx={{
                 color: theme.palette.common.black,
-
                 textTransform: 'none',
               }}
             >
@@ -69,7 +71,6 @@ const Header: React.FC = () => {
               className={dmSerifDisplay.className}
               sx={{
                 color: theme.palette.common.black,
-
                 textTransform: 'none',
               }}
             >
@@ -80,7 +81,6 @@ const Header: React.FC = () => {
               className={dmSerifDisplay.className}
               sx={{
                 color: theme.palette.common.black,
-
                 textTransform: 'none',
               }}
             >
