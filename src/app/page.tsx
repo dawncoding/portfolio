@@ -16,13 +16,16 @@ export default function Home() {
     >
       <Stack width="100%" maxWidth="87.5rem">
         <Header />
-        <Box
-          display="flex"
-          justifyContent={isMediumSmaller ? 'center' : 'start'}
-        >
-          <BusinessCard />
-        </Box>
-        <Introduction />
+        <Stack gap="1rem" direction={isMediumSmaller ? 'column' : 'row'}>
+          {isMediumSmaller ? (
+            <Box display="flex" justifyContent={'center'}>
+              <BusinessCard />
+            </Box>
+          ) : (
+            <BusinessCard />
+          )}
+          <Introduction />
+        </Stack>
       </Stack>
     </Box>
   );
