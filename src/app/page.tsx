@@ -2,6 +2,7 @@
 
 import BusinessCard from '@/components/BusinessCard/index.tsx';
 import Header from '@/components/Header/index.tsx';
+import Introduction from '@/components/Introduction/index.tsx';
 import theme from '@/styles/theme.ts';
 import { Box, Stack, useMediaQuery } from '@mui/material';
 
@@ -21,6 +22,7 @@ export default function Home() {
         >
           <BusinessCard />
         </Box>
+        <Introduction />
       </Stack>
     </Box>
   );
