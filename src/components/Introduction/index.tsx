@@ -1,12 +1,30 @@
+import Circle from '@/components/Circle/index.tsx';
 import Text from '@/components/Text/index.tsx';
-import { Stack, useTheme } from '@mui/material';
+import { Box, Stack, useTheme } from '@mui/material';
 
 const Introduction: React.FC = () => {
   const theme = useTheme();
   // const isMediumSmaller = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
-    <Stack sx={{ backgroundColor: theme.palette.common.white }} padding="1rem">
+    <Stack
+      sx={{ backgroundColor: theme.palette.common.white }}
+      padding="2rem"
+      justifyContent="space-between"
+    >
+      <Box position="relative" marginBottom="1.5rem">
+        <Circle direction="left" />
+        <Text
+          language="en"
+          variant="h4"
+          position="absolute"
+          top="2.5rem"
+          left="2rem"
+          zIndex={1}
+        >
+          Intro.
+        </Text>
+      </Box>
       <Text language="ko" sx={{ whiteSpace: 'pre-line' }}>
         {`저는 미리 발생할 만한 문제 상황을 예측하고 대비하는 능력을 갖춘 주니어 프론트엔드 개발자입니다.
         
