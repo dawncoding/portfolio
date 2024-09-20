@@ -12,13 +12,12 @@ const Text: React.FC<TextProps> = ({ language, children, sx, ...rest }) => {
   return (
     <>
       {language === 'ko' ? (
-        <Typography className={gowunBatang.className} sx={{ ...sx }} {...rest}>
+        <Typography sx={{ fontFamily: gowunBatang.style, ...sx }} {...rest}>
           {children}
         </Typography>
       ) : (
         <Typography
-          className={dmSerifDisplay.className}
-          sx={{ ...sx }} // 사용자가 전달한 sx 스타일을 병합
+          sx={{ fontFamily: dmSerifDisplay.style, ...sx }} // 사용자가 전달한 sx 스타일을 병합
           {...rest}
         >
           {children}

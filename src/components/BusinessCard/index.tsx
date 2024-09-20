@@ -1,7 +1,6 @@
 'use client';
 
 import BoxShadowContainer from '@/components/BoxShadowContainer/index.tsx';
-import Text from '@/components/Text/index.tsx';
 import {
   Avatar,
   Box,
@@ -14,6 +13,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import { dmSerifDisplay } from '@/styles/font.ts';
+import Text from '@/components/Text/index.tsx';
 
 const BusinessCard: React.FC = () => {
   const theme = useTheme();
@@ -72,10 +72,11 @@ const BusinessCard: React.FC = () => {
               </Box>
               <Button
                 variant="text"
-                className={dmSerifDisplay.className}
                 sx={{
+                  padding: 0,
                   color: theme.palette.common.black,
                   textTransform: 'none',
+                  fontFamily: dmSerifDisplay.style,
                 }}
               >
                 sunnuri99@gmail.com
@@ -87,10 +88,11 @@ const BusinessCard: React.FC = () => {
               </Box>
               <Button
                 variant="text"
-                className={dmSerifDisplay.className}
                 sx={{
+                  padding: 0,
                   color: theme.palette.common.black,
                   textTransform: 'none',
+                  fontFamily: dmSerifDisplay.style,
                 }}
               >
                 GITHUB
@@ -102,10 +104,11 @@ const BusinessCard: React.FC = () => {
               </Box>
               <Button
                 variant="text"
-                className={dmSerifDisplay.className}
                 sx={{
+                  padding: 0,
                   color: theme.palette.common.black,
                   textTransform: 'none',
+                  fontFamily: dmSerifDisplay.style,
                 }}
               >
                 TISTORY

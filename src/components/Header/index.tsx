@@ -9,15 +9,14 @@ import {
   List,
   ListItem,
   ListItemButton,
-  ListItemText,
   Stack,
   useMediaQuery,
   useTheme,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import Text from '@/components/Text/index.tsx';
 import { dmSerifDisplay } from '@/styles/font.ts';
 import React from 'react';
+import Text from '@/components/Text/index.tsx';
 
 const Header: React.FC = () => {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
@@ -29,7 +28,7 @@ const Header: React.FC = () => {
   };
 
   const DrawerList = (
-    <Box sx={{ width: '40%' }} onClick={toggleDrawer(false)}>
+    <Box onClick={toggleDrawer(false)}>
       <List>
         {[
           'Intro',
@@ -40,7 +39,7 @@ const Header: React.FC = () => {
         ].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
-              <ListItemText primary={text} />
+              <Text language="en">{text}</Text>
             </ListItemButton>
           </ListItem>
         ))}
@@ -75,10 +74,10 @@ const Header: React.FC = () => {
           <Stack direction="row" gap="1rem">
             <Button
               variant="text"
-              className={dmSerifDisplay.className}
               sx={{
                 color: theme.palette.common.black,
                 textTransform: 'none',
+                fontFamily: dmSerifDisplay.style,
               }}
             >
               Intro
@@ -89,6 +88,7 @@ const Header: React.FC = () => {
               sx={{
                 color: theme.palette.common.black,
                 textTransform: 'none',
+                fontFamily: dmSerifDisplay.style,
               }}
             >
               Skill
@@ -99,6 +99,7 @@ const Header: React.FC = () => {
               sx={{
                 color: theme.palette.common.black,
                 textTransform: 'none',
+                fontFamily: dmSerifDisplay.style,
               }}
             >
               Career
@@ -109,6 +110,7 @@ const Header: React.FC = () => {
               sx={{
                 color: theme.palette.common.black,
                 textTransform: 'none',
+                fontFamily: dmSerifDisplay.style,
               }}
             >
               Team Projects
@@ -119,6 +121,7 @@ const Header: React.FC = () => {
               sx={{
                 color: theme.palette.common.black,
                 textTransform: 'none',
+                fontFamily: dmSerifDisplay.style,
               }}
             >
               Personal Experience
