@@ -21,11 +21,13 @@ const BusinessCard: React.FC = () => {
 
   return (
     <BoxShadowContainer
+      width={isMediumSmaller ? '90%' : '13rem'}
+      marginLeft={isMediumSmaller ? 0 : '1rem'}
       borderRadius="1rem"
-      margin="1rem"
-      width={isMediumSmaller ? '90%' : '30%'}
+      position={isMediumSmaller ? 'static' : 'fixed'}
+      zIndex={2}
     >
-      <Stack direction={isMediumSmaller ? 'row' : 'column'} height="100%">
+      <Stack direction={isMediumSmaller ? 'row' : 'column'}>
         {/* Avatar */}
         <Box
           width={isMediumSmaller ? '40%' : '100%'}
@@ -65,7 +67,9 @@ const BusinessCard: React.FC = () => {
             </Text>
           </Box>
           <Stack>
-            <Text language="ko">김선진</Text>
+            <Text language="ko" marginBottom="0.5rem">
+              김선진
+            </Text>
             <Stack direction="row" gap="0.5rem">
               <Box display="flex" alignItems="center">
                 <EmailIcon />
