@@ -124,12 +124,6 @@ const Skill: React.FC = () => {
           </Box>
         </Stack>
       )} */}
-
-      <Box display="flex" justifyContent="end" padding="2rem">
-        <Text language="en" variant="h4">
-          Designed & Developed by KIMSUNJIN
-        </Text>
-      </Box>
     </Stack>
   );
 };
