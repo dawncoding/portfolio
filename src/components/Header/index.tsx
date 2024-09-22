@@ -48,7 +48,15 @@ const Header: React.FC = () => {
   );
 
   return (
-    <BoxShadowContainer borderRadius="2.5rem" padding="1.5rem" margin="1rem">
+    <BoxShadowContainer
+      width="95%"
+      maxWidth="87.5rem"
+      padding="1.5rem"
+      margin="1rem"
+      borderRadius="2.5rem"
+      position="fixed"
+      zIndex={3}
+    >
       <Stack direction="row" justifyContent="space-between">
         <Box display="flex" alignItems="center">
           <Text language="en" variant="h1">
