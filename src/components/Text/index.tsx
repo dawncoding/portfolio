@@ -12,7 +12,10 @@ const Text: React.FC<TextProps> = ({ language, children, sx, ...rest }) => {
   return (
     <>
       {language === 'ko' ? (
-        <Typography sx={{ fontFamily: gowunBatang.style, ...sx }} {...rest}>
+        <Typography
+          sx={{ fontFamily: gowunBatang.style, fontWeight: 700, ...sx }}
+          {...rest}
+        >
           {children}
         </Typography>
       ) : (
