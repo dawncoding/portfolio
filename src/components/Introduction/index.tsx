@@ -11,7 +11,7 @@ const Introduction: React.FC = () => {
       padding="2rem"
       marginTop={isMediumSmaller ? '1rem' : 0}
       justifyContent="space-between"
-      sx={{ backgroundColor: theme.palette.common.white }}
+      sx={{ backgroundColor: theme.palette.background.default }}
     >
       <Box position="relative" marginBottom="1.5rem">
         <Circle direction="left" />
