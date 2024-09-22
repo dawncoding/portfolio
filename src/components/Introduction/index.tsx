@@ -1,16 +1,17 @@
 import Circle from '@/components/Circle/index.tsx';
 import Text from '@/components/Text/index.tsx';
-import { Box, Stack, useTheme } from '@mui/material';
+import { Box, Stack, useMediaQuery, useTheme } from '@mui/material';
 
 const Introduction: React.FC = () => {
   const theme = useTheme();
-  // const isMediumSmaller = useMediaQuery(theme.breakpoints.down('md'));
+  const isMediumSmaller = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <Stack
-      sx={{ backgroundColor: theme.palette.common.white }}
       padding="2rem"
+      marginTop={isMediumSmaller ? '1rem' : 0}
       justifyContent="space-between"
+      sx={{ backgroundColor: theme.palette.common.white }}
     >
       <Box position="relative" marginBottom="1.5rem">
         <Circle direction="left" />
