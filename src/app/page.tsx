@@ -3,28 +3,40 @@
 import BusinessCard from '@/components/BusinessCard/index.tsx';
 import Header from '@/components/Header/index.tsx';
 import Introduction from '@/components/Introduction/index.tsx';
+import Skill from '@/components/Skill/index.tsx';
 import theme from '@/styles/theme.ts';
 import { Box, Stack, useMediaQuery } from '@mui/material';
 
 export default function Home() {
   const isMediumSmaller = useMediaQuery(theme.breakpoints.down('md'));
+
   return (
     <Box
-      sx={{ backgroundColor: theme.palette.background.default }}
+      sx={{
+        background: `radial-gradient(ellipse at center, ${theme.palette.yellow.main} 0%, ${theme.palette.green.main} 35%,${theme.palette.blue.light} 100%)`,
+      }}
       display="flex"
       justifyContent="center"
     >
       <Stack width="100%" maxWidth="87.5rem">
-        <Header />
-        <Stack gap="1rem" direction={isMediumSmaller ? 'column' : 'row'}>
+        <Box display="flex" justifyContent="center">
+          <Header />
+        </Box>
+        <Stack
+          direction={isMediumSmaller ? 'column' : 'row'}
+          marginTop="7.5rem"
+        >
           {isMediumSmaller ? (
-            <Box display="flex" justifyContent={'center'}>
+            <Box display="flex" justifyContent="center">
               <BusinessCard />
             </Box>
           ) : (
             <BusinessCard />
           )}
-          <Introduction />
+          <Stack marginLeft={isMediumSmaller ? 0 : '15rem'} gap="1rem">
+            <Introduction />
+            <Skill />
+          </Stack>
         </Stack>
       </Stack>
     </Box>
