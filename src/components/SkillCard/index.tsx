@@ -24,7 +24,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skillTitle, children }) => {
         </Text>
       </BoxShadowContainer>
       <BoxShadowContainer
-        width="30rem"
+        width="25rem"
         borderRadius="1rem"
         padding="2.5rem"
         display="flex"
