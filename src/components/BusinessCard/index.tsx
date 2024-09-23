@@ -6,6 +6,7 @@ import {
   Box,
   Button,
   Stack,
+  Tooltip,
   useMediaQuery,
   useTheme,
 } from '@mui/material';
@@ -21,7 +22,7 @@ const BusinessCard: React.FC = () => {
 
   return (
     <BoxShadowContainer
-      width={isMediumSmaller ? '90%' : '13rem'}
+      width={isMediumSmaller ? '90%' : '14rem'}
       marginLeft={isMediumSmaller ? 0 : '1rem'}
       borderRadius="1rem"
       position={isMediumSmaller ? 'static' : 'fixed'}
@@ -70,54 +71,81 @@ const BusinessCard: React.FC = () => {
             <Text language="ko" marginBottom="0.5rem">
               김선진
             </Text>
-            <Stack direction="row" gap="0.5rem">
-              <Box display="flex" alignItems="center">
-                <EmailIcon />
-              </Box>
+            <Tooltip
+              title="주소를 누르면 이메일을 입력하는 창이 열립니다."
+              placement="right"
+              arrow
+            >
               <Button
                 variant="text"
+                size="small"
+                startIcon={<EmailIcon />}
                 sx={{
-                  padding: 0,
+                  width: 'max-content',
                   color: theme.palette.common.black,
                   textTransform: 'none',
                   fontFamily: dmSerifDisplay.style,
+                  '&:hover': {
+                    color: theme.palette.blue.main,
+                  },
                 }}
+                onClick={() =>
+                  (window.location.href = 'mailto:sunnuri99@gmail.com')
+                }
               >
                 sunnuri99@gmail.com
               </Button>
-            </Stack>
-            <Stack direction="row" gap="0.5rem">
-              <Box display="flex" alignItems="center">
-                <GitHubIcon />
-              </Box>
+            </Tooltip>
+            <Tooltip
+              title="새로운 탭에서 제 Github 페이지가 열립니다."
+              placement="right"
+              arrow
+            >
               <Button
                 variant="text"
+                size="small"
+                startIcon={<GitHubIcon />}
                 sx={{
-                  padding: 0,
+                  width: 'max-content',
                   color: theme.palette.common.black,
                   textTransform: 'none',
                   fontFamily: dmSerifDisplay.style,
+                  '&:hover': {
+                    color: theme.palette.blue.main,
+                  },
                 }}
+                onClick={() =>
+                  window.open('https://github.com/dawncoding', '_blank')
+                }
               >
                 GITHUB
               </Button>
-            </Stack>
-            <Stack direction="row" gap="0.5rem">
-              <Box display="flex" alignItems="center">
-                <LaptopMacIcon />
-              </Box>
+            </Tooltip>
+            <Tooltip
+              title="새로운 탭에서 제 개발 블로그가 열립니다."
+              placement="right"
+              arrow
+            >
               <Button
                 variant="text"
+                size="small"
+                startIcon={<LaptopMacIcon />}
                 sx={{
-                  padding: 0,
+                  width: 'max-content',
                   color: theme.palette.common.black,
                   textTransform: 'none',
                   fontFamily: dmSerifDisplay.style,
+                  '&:hover': {
+                    color: theme.palette.blue.main,
+                  },
                 }}
+                onClick={() =>
+                  window.open('https://dawnwithsun.tistory.com/', '_blank')
+                }
               >
                 TISTORY
               </Button>
-            </Stack>
+            </Tooltip>
           </Stack>
         </Stack>
       </Stack>
