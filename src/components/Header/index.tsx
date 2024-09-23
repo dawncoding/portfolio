@@ -10,6 +10,7 @@ import {
   ListItem,
   ListItemButton,
   Stack,
+  Tooltip,
   useMediaQuery,
   useTheme,
 } from '@mui/material';
@@ -65,15 +66,20 @@ const Header: React.FC = () => {
         </Box>
         {isMediumSmaller ? (
           <>
-            <IconButton
-              sx={{
-                color: theme.palette.common.black,
-                padding: 0,
-              }}
-              onClick={toggleDrawer(true)}
-            >
-              <MenuIcon sx={{ width: '2rem', height: '2rem' }} />
-            </IconButton>
+            <Tooltip title="메뉴바가 열립니다." placement="bottom" arrow>
+              <IconButton
+                sx={{
+                  color: theme.palette.common.black,
+                  padding: 0,
+                  '&:hover': {
+                    color: theme.palette.blue.main,
+                  },
+                }}
+                onClick={toggleDrawer(true)}
+              >
+                <MenuIcon sx={{ width: '2rem', height: '2rem' }} />
+              </IconButton>
+            </Tooltip>
             <Drawer open={isDrawerOpen} onClose={toggleDrawer(false)}>
               {DrawerList}
             </Drawer>
