@@ -1,6 +1,8 @@
 'use client';
 
 import BusinessCard from '@/components/BusinessCard/index.tsx';
+import Career from '@/components/Career/index.tsx';
+import Footer from '@/components/Footer/index.tsx';
 import Header from '@/components/Header/index.tsx';
 import Introduction from '@/components/Introduction/index.tsx';
 import Skill from '@/components/Skill/index.tsx';
@@ -33,11 +35,13 @@ export default function Home() {
           ) : (
             <BusinessCard />
           )}
-          <Stack marginLeft={isMediumSmaller ? 0 : '15rem'} gap="1rem">
+          <Stack marginLeft={isMediumSmaller ? 0 : '16rem'} gap="1rem">
             <Introduction />
             <Skill />
+            <Career />
           </Stack>
         </Stack>
+        <Footer />
       </Stack>
     </Box>
   );
