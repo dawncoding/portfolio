@@ -13,6 +13,7 @@ const Text: React.FC<TextProps> = ({ language, children, sx, ...rest }) => {
     <>
       {language === 'ko' ? (
         <Typography
+          lang="ko"
           sx={{ fontFamily: gowunBatang.style, fontWeight: 700, ...sx }}
           {...rest}
         >
@@ -20,6 +21,7 @@ const Text: React.FC<TextProps> = ({ language, children, sx, ...rest }) => {
         </Typography>
       ) : (
         <Typography
+          lang="en"
           sx={{ fontFamily: dmSerifDisplay.style, ...sx }} // 사용자가 전달한 sx 스타일을 병합
           {...rest}
         >
