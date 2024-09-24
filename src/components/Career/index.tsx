@@ -7,12 +7,16 @@ import {
   AccordionDetails,
   AccordionSummary,
   Box,
+  CardMedia,
   Stack,
+  useMediaQuery,
   useTheme,
 } from '@mui/material';
+import React from 'react';
 
 const Career: React.FC = () => {
   const theme = useTheme();
+  const isMediumSmaller = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <Stack
@@ -137,7 +141,7 @@ const Career: React.FC = () => {
           >
             <Text language="ko">MUI 컴포넌트 migration 문서화</Text>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails sx={{ position: 'relative' }}>
             <Stack gap="0.5rem">
               <Text language="ko">
                 엘리스LXP 수업 관련 페이지 migration을 담당하는 스쿼드의
@@ -153,6 +157,29 @@ const Career: React.FC = () => {
                 - 팀 간 협업을 원활하게 하기 위해 레퍼런스 문서를 제공하여 코드
                 베이스의 일관성 및 유지보수성 향상에 기여
               </Text>
+              <Box display="flex" justifyContent="end">
+                <CardMedia
+                  component="img"
+                  src="/images/notion-component-migration-mapping.png"
+                  alt="component migration mapping"
+                  sx={{
+                    boxShadow: `0rem 0.25rem 0.25rem 0rem ${theme.palette.gray.main}`,
+                  }}
+                />
+              </Box>
+
+              <CardMedia
+                component="img"
+                src="/images/avatar-career.png"
+                alt="avatar"
+                sx={{
+                  width: isMediumSmaller ? '8rem' : '10rem',
+                  height: isMediumSmaller ? '8rem' : '10rem',
+                  position: 'absolute',
+                  right: '0rem',
+                  bottom: '0rem',
+                }}
+              />
             </Stack>
           </AccordionDetails>
         </Accordion>
