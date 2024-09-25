@@ -1,4 +1,11 @@
 import { Gowun_Batang, DM_Serif_Display } from 'next/font/google';
+import localFont from 'next/font/local';
+
+const pretendard = localFont({
+  src: '/fonts/PretendardVariable.woff2',
+  display: 'swap',
+  weight: '45 920',
+});
 
 const gowunBatang = Gowun_Batang({
   weight: ['400', '700'],
@@ -14,4 +21,4 @@ const dmSerifDisplay = DM_Serif_Display({
   display: 'swap',
 });
 
-export { gowunBatang, dmSerifDisplay };
+export { gowunBatang, dmSerifDisplay, pretendard };
