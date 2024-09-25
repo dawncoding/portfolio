@@ -260,7 +260,8 @@ const Skill: React.FC = () => {
             >
               MVC 패턴
             </Text>
-            데이터베이스와 애플리케이션 로직을 분리하여 개발한 경험이 있습니다.
+            을 활용하여 데이터베이스와 애플리케이션 로직을 분리하여 개발한
+            경험이 있습니다.
           </Text>
           <Text component="div" language="ko" marginBottom="0.5rem">
             {`- `}
