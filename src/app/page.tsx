@@ -1,5 +1,6 @@
 'use client';
 
+import AosContainer from '@/components/AosContainer/index.tsx';
 import BusinessCard from '@/components/BusinessCard/index.tsx';
 import Career from '@/components/Career/index.tsx';
 import Footer from '@/components/Footer/index.tsx';
@@ -21,9 +22,11 @@ export default function Home() {
       justifyContent="center"
     >
       <Stack width="100%" maxWidth="87.5rem">
-        <Box display="flex" justifyContent="center">
-          <Header />
-        </Box>
+        <AosContainer dataAos="fade-down">
+          <Box display="flex" justifyContent="center">
+            <Header />
+          </Box>
+        </AosContainer>
         <Stack
           direction={isMediumSmaller ? 'column' : 'row'}
           marginTop="7.5rem"
@@ -33,7 +36,9 @@ export default function Home() {
               <BusinessCard />
             </Box>
           ) : (
-            <BusinessCard />
+            <AosContainer dataAos="fade-right">
+              <BusinessCard />
+            </AosContainer>
           )}
           <Stack marginLeft={isMediumSmaller ? 0 : '16rem'} gap="1rem">
             <Introduction />
