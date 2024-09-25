@@ -66,8 +66,13 @@ const Career: React.FC = () => {
       <Stack>
         <Accordion defaultExpanded>
           <AccordionSummary
-            expandIcon={<ArrowDropDown />}
+            expandIcon={
+              <ArrowDropDown sx={{ color: theme.palette.blue.dark }} />
+            }
             aria-controls="panel1-content"
+            sx={{
+              color: theme.palette.blue.dark,
+            }}
           >
             <Text language="ko">컴포넌트 분석 및 매핑</Text>
           </AccordionSummary>
@@ -81,8 +86,13 @@ const Career: React.FC = () => {
         </Accordion>
         <Accordion defaultExpanded>
           <AccordionSummary
-            expandIcon={<ArrowDropDown />}
+            expandIcon={
+              <ArrowDropDown sx={{ color: theme.palette.blue.dark }} />
+            }
             aria-controls="panel2-content"
+            sx={{
+              color: theme.palette.blue.dark,
+            }}
           >
             <Text language="ko">코드 베이스 업데이트</Text>
           </AccordionSummary>
@@ -122,8 +132,13 @@ const Career: React.FC = () => {
         </Accordion>
         <Accordion defaultExpanded>
           <AccordionSummary
-            expandIcon={<ArrowDropDown />}
+            expandIcon={
+              <ArrowDropDown sx={{ color: theme.palette.blue.dark }} />
+            }
             aria-controls="panel3-content"
+            sx={{
+              color: theme.palette.blue.dark,
+            }}
           >
             <Text language="ko">스타일링 및 테마 설정</Text>
           </AccordionSummary>
@@ -136,8 +151,13 @@ const Career: React.FC = () => {
         </Accordion>
         <Accordion defaultExpanded>
           <AccordionSummary
-            expandIcon={<ArrowDropDown />}
+            expandIcon={
+              <ArrowDropDown sx={{ color: theme.palette.blue.dark }} />
+            }
             aria-controls="panel4-content"
+            sx={{
+              color: theme.palette.blue.dark,
+            }}
           >
             <Text language="ko">MUI 컴포넌트 migration 문서화</Text>
           </AccordionSummary>
