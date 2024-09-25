@@ -13,11 +13,11 @@ const SkillCard: React.FC<SkillCardProps> = ({ skillTitle, children }) => {
       <BoxShadowContainer
         display="flex"
         justifyContent="center"
-        width="10rem"
-        padding="1rem"
+        width="10.5rem"
+        padding="0.5rem"
         borderRadius="2rem"
         position="absolute"
-        top="-2.5rem"
+        top="-1.5rem"
       >
         <Text language="en" variant="h6">
           {skillTitle}
@@ -26,11 +26,11 @@ const SkillCard: React.FC<SkillCardProps> = ({ skillTitle, children }) => {
       <BoxShadowContainer
         width="25rem"
         borderRadius="1rem"
-        padding="2.5rem"
+        padding="2rem"
         display="flex"
         alignItems="center"
       >
-        <Text language="ko" sx={{ whiteSpace: 'pre-line' }}>
+        <Text component="div" language="ko" sx={{ whiteSpace: 'pre-line' }}>
           {children}
         </Text>
       </BoxShadowContainer>
