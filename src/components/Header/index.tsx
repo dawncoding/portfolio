@@ -19,7 +19,11 @@ import { dmSerifDisplay } from '@/styles/font.ts';
 import React from 'react';
 import Text from '@/components/Text/index.tsx';
 
-const Header: React.FC = () => {
+const Header: React.FC<{
+  introRef: React.RefObject<HTMLDivElement>;
+  skillRef: React.RefObject<HTMLDivElement>;
+  careerRef: React.RefObject<HTMLDivElement>;
+}> = ({ introRef, skillRef, careerRef }) => {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
   const theme = useTheme();
   const isMediumSmaller = useMediaQuery(theme.breakpoints.down('md'));
@@ -28,16 +32,32 @@ const Header: React.FC = () => {
     setIsDrawerOpen(newOpen);
   };
 
+  const handleScrollToSection = (
+    sectionRef: React.RefObject<HTMLDivElement>
+  ) => {
+    if (sectionRef.current) {
+      sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const DrawerList = (
-    <Box onClick={toggleDrawer(false)}>
+    <Box onClick={toggleDrawer(false)} width="10rem">
       <List>
-        {['Intro', 'Skill', 'Career'].map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <Text language="en">{text}</Text>
-            </ListItemButton>
-          </ListItem>
-        ))}
+        <ListItem key="Intro" disablePadding>
+          <ListItemButton onClick={() => handleScrollToSection(introRef)}>
+            <Text language="en">Intro</Text>
+          </ListItemButton>
+        </ListItem>
+        <ListItem key="Skill" disablePadding>
+          <ListItemButton onClick={() => handleScrollToSection(skillRef)}>
+            <Text language="en">Skill</Text>
+          </ListItemButton>
+        </ListItem>
+        <ListItem key="Career" disablePadding>
+          <ListItemButton onClick={() => handleScrollToSection(careerRef)}>
+            <Text language="en">Career</Text>
+          </ListItemButton>
+        </ListItem>
       </List>
     </Box>
   );
@@ -87,6 +107,7 @@ const Header: React.FC = () => {
                 textTransform: 'none',
                 fontFamily: dmSerifDisplay.style,
               }}
+              onClick={() => handleScrollToSection(introRef)}
             >
               Intro
             </Button>
@@ -98,6 +119,7 @@ const Header: React.FC = () => {
                 textTransform: 'none',
                 fontFamily: dmSerifDisplay.style,
               }}
+              onClick={() => handleScrollToSection(skillRef)}
             >
               Skill
             </Button>
@@ -109,6 +131,7 @@ const Header: React.FC = () => {
                 textTransform: 'none',
                 fontFamily: dmSerifDisplay.style,
               }}
+              onClick={() => handleScrollToSection(careerRef)}
             >
               Career
             </Button>

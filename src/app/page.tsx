@@ -8,9 +8,13 @@ import Introduction from '@/components/Introduction/index.tsx';
 import Skill from '@/components/Skill/index.tsx';
 import theme from '@/styles/theme.ts';
 import { Box, Stack, useMediaQuery } from '@mui/material';
+import React from 'react';
 
 export default function Home() {
   const isMediumSmaller = useMediaQuery(theme.breakpoints.down('md'));
+  const introRef = React.useRef<HTMLDivElement | null>(null);
+  const skillRef = React.useRef<HTMLDivElement | null>(null);
+  const careerRef = React.useRef<HTMLDivElement | null>(null);
 
   return (
     <Box
@@ -22,7 +26,11 @@ export default function Home() {
     >
       <Stack width="100%" maxWidth="87.5rem">
         <Box display="flex" justifyContent="center">
-          <Header />
+          <Header
+            introRef={introRef}
+            skillRef={skillRef}
+            careerRef={careerRef}
+          />
         </Box>
 
         <Stack
@@ -37,9 +45,9 @@ export default function Home() {
             <BusinessCard />
           )}
           <Stack marginLeft={isMediumSmaller ? 0 : '16rem'} gap="1rem">
-            <Introduction />
-            <Skill />
-            <Career />
+            <Introduction ref={introRef} />
+            <Skill ref={skillRef} />
+            <Career ref={careerRef} />
           </Stack>
         </Stack>
         <Footer />
