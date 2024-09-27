@@ -26,12 +26,52 @@ const Introduction: React.FC = () => {
           Intro.
         </Text>
       </Box>
-      <Text language="ko" sx={{ whiteSpace: 'pre-line' }}>
-        {`저는 미리 발생할 만한 문제 상황을 예측하고 대비하는 능력을 갖춘 주니어 프론트엔드 개발자입니다.
-        
-        일상생활에서 소소하게 도움이 되는 물건들을 챙겨 다니며 주변 사람들에게 도움을 주다 보니 “도라에몽"이라는 별명을 얻게 되었습니다.
-        
-        이러한 성격은 업무에서도 발휘되었습니다. 개발 중에 겪었던 이슈와 해결과정을 기록하고 팀원들에게 공유함으로써, 향후 동일한 문제가 발생했을 때 신속하게 대처할 수 있도록 했습니다.`}
+      <Text component="div" language="ko" sx={{ whiteSpace: 'pre-line' }}>
+        <Stack gap="0.5rem">
+          <Text component="div" language="ko">
+            {`저는 `}
+            <Text
+              component="span"
+              language="ko"
+              sx={{ color: theme.palette.blue.dark }}
+            >
+              발생할 수 있는 문제를 미리 파악하고, 이를 선제적으로 해결할 준비를
+              갖춘
+            </Text>
+            {` 주니어 프론트엔드 개발자입니다.`}
+          </Text>
+          <Text component="div" language="ko">
+            {`- 저의 장점은 `}
+            <Text
+              component="span"
+              language="ko"
+              sx={{ color: theme.palette.blue.dark }}
+            >
+              프론트엔드 개발자로서
+            </Text>
+            {` 다음과 같이 발휘되었습니다.`}
+          </Text>
+          <Text language="ko" paddingLeft="2rem">
+            컴포넌트의 재사용성과 코드의 일관성을 강화하여, 유지보수에 필요한
+            시간을 줄이고 효율성을 높이기 위해 노력했습니다.
+          </Text>
+          <Text component="div" language="ko">
+            {`- 저의 장점은 `}
+            <Text
+              component="span"
+              language="ko"
+              sx={{ color: theme.palette.blue.dark }}
+            >
+              협업할 때
+            </Text>
+            {` 다음과 같이 발휘되었습니다.`}
+          </Text>
+          <Text language="ko" paddingLeft="2rem">
+            개발하면서 겪었던 이슈와 해결하는 과정을 기록하고, 이를 팀원들에게
+            공유하여 향후 동일한 문제가 발생했을 때 신속하게 대처할 수 있도록
+            했습니다.
+          </Text>
+        </Stack>
       </Text>
     </Stack>
   );
