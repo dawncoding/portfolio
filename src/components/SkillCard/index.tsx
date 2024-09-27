@@ -13,7 +13,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skillTitle, children }) => {
       <BoxShadowContainer
         display="flex"
         justifyContent="center"
-        width="10.5rem"
+        width="15.5rem"
         padding="0.5rem"
         borderRadius="2rem"
         position="absolute"
