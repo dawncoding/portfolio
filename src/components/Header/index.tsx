@@ -31,13 +31,7 @@ const Header: React.FC = () => {
   const DrawerList = (
     <Box onClick={toggleDrawer(false)}>
       <List>
-        {[
-          'Intro',
-          'Skill',
-          'Career',
-          'Team Projects',
-          'Personal Experience',
-        ].map((text) => (
+        {['Intro', 'Skill', 'Career'].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <Text language="en">{text}</Text>
@@ -117,28 +111,6 @@ const Header: React.FC = () => {
               }}
             >
               Career
-            </Button>
-            <Button
-              variant="text"
-              className={dmSerifDisplay.className}
-              sx={{
-                color: theme.palette.common.black,
-                textTransform: 'none',
-                fontFamily: dmSerifDisplay.style,
-              }}
-            >
-              Team Projects
-            </Button>
-            <Button
-              variant="text"
-              className={dmSerifDisplay.className}
-              sx={{
-                color: theme.palette.common.black,
-                textTransform: 'none',
-                fontFamily: dmSerifDisplay.style,
-              }}
-            >
-              Personal Experience
             </Button>
           </Stack>
         )}
