@@ -14,12 +14,13 @@ import {
 } from '@mui/material';
 import React from 'react';
 
-const Career: React.FC = () => {
+const Career = React.forwardRef<HTMLDivElement>((_, ref) => {
   const theme = useTheme();
   const isMediumSmaller = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <Stack
+      ref={ref}
       gap="1.5rem"
       padding="2rem"
       sx={{ backgroundColor: theme.palette.background.default }}
@@ -270,6 +271,8 @@ const Career: React.FC = () => {
       </Stack>
     </Stack>
   );
-};
+});
+
+Career.displayName = 'Career';
 
 export default Career;

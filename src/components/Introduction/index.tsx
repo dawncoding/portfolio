@@ -1,13 +1,15 @@
 import Circle from '@/components/Circle/index.tsx';
 import Text from '@/components/Text/index.tsx';
 import { Box, Stack, useMediaQuery, useTheme } from '@mui/material';
+import React from 'react';
 
-const Introduction: React.FC = () => {
+const Introduction = React.forwardRef<HTMLDivElement>((_, ref) => {
   const theme = useTheme();
   const isMediumSmaller = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
     <Stack
+      ref={ref}
       padding="2rem"
       marginTop={isMediumSmaller ? '1rem' : 0}
       justifyContent="space-between"
@@ -75,6 +77,8 @@ const Introduction: React.FC = () => {
       </Text>
     </Stack>
   );
-};
+});
+
+Introduction.displayName = 'Introduction';
 
 export default Introduction;

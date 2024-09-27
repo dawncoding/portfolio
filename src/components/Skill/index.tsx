@@ -2,12 +2,13 @@ import Circle from '@/components/Circle/index.tsx';
 import SkillCard from '@/components/SkillCard/index.tsx';
 import Text from '@/components/Text/index.tsx';
 import { Box, Divider, Stack, useTheme } from '@mui/material';
+import React from 'react';
 
-const Skill: React.FC = () => {
+const Skill = React.forwardRef<HTMLDivElement>((_, ref) => {
   const theme = useTheme();
 
   return (
-    <Stack padding="2rem" gap="1rem">
+    <Stack ref={ref} padding="2rem" gap="1rem">
       <Stack direction="row" justifyContent="end">
         <Box display="flex" alignItems="end">
           <Text language="ko" variant="h6">
@@ -325,6 +326,8 @@ const Skill: React.FC = () => {
       </Box>
     </Stack>
   );
-};
+});
+
+Skill.displayName = 'Skill';
 
 export default Skill;
