@@ -201,9 +201,6 @@ const Career = React.forwardRef<HTMLDivElement>((_, ref) => {
                   component="img"
                   src="/images/notion-component-migration-mapping.png"
                   alt="component migration mapping"
-                  sx={{
-                    boxShadow: `0rem 0.25rem 0.25rem 0rem ${theme.palette.gray.main}`,
-                  }}
                 />
               </Box>
 
@@ -246,10 +243,7 @@ const Career = React.forwardRef<HTMLDivElement>((_, ref) => {
                 <CardMedia
                   component="img"
                   src="/images/notion-work-flow.png"
-                  alt="qa sheet"
-                  sx={{
-                    boxShadow: `0rem 0.25rem 0.25rem 0rem ${theme.palette.gray.main}`,
-                  }}
+                  alt="work flow"
                 />
               </Box>
 
