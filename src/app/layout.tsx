@@ -12,7 +12,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <Head>
-        <title>김선진 포트폴리오</title>
+        <title>KIMSUNJIN Portfolio</title>
       </Head>
       <body>
         <ThemeProvider theme={theme}>
